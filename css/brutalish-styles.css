@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-bg: #F9F8F5;
+
+    --brutalish-button: #000000;
+    --brutalish-button-hover: #F08705;
+    --brutalish-button-pressed: #C46C00;
+
+    --ticker-text-color: #757575;
+
+    --home-work-section: linear-gradient(to top, #F9F8F5 0%, #F8FFEF 18%, #F8FFEF 51%, #F8FFEF 83%, #F9F8F5 100%);
+
+    --card-bg-white: #FFFFFF;
+
+    --testimonail-dot-indicator: #D9D9D9;
+    --testimonail-dot-indicator-active: #000000;
+
+    --text-decoration-underline: #FF43A8;
+
+    --footer-text-color: #FFFFFF;
+    --footer-text-color-alternate: #999999;
+
+    --work-page-main-bg: var(--main-bg);
+    --work-page-project-details-bg: #FFFFFF;
+    --work-page-desc-tags-font: #757575;
+
+    --project-page-scroll-bar-container: #CCCCCC;
+    --project-page-scroll-bar: #E1F5C8;
+    --project-tag-line-font: #777777;
+    --project-title-font: #4C4C4C;
+    --project-award-font: #4C4C4C;
+    --project-process-bg: #F7F1EC;
+    --project-process-active: #F08705;
+    --project-process-inactive: #9F9F9F;
+    --project-process-discover-elements-statistics: #89694F;
+    --project-process-table-borders: #FFE5CE;
+}
+
+
+/*
+ ██████╗ ██████╗ ███╗   ██╗████████╗ █████╗ ██╗███╗   ██╗███████╗██████╗
+██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝██╔══██╗
+██║     ██║   ██║██╔██╗ ██║   ██║   ███████║██║██╔██╗ ██║█████╗  ██████╔╝
+██║     ██║   ██║██║╚██╗██║   ██║   ██╔══██║██║██║╚██╗██║██╔══╝  ██╔══██╗
+╚██████╗╚██████╔╝██║ ╚████║   ██║   ██║  ██║██║██║ ╚████║███████╗██║  ██║
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
+*/
+
+/*
+TODO Define 50% for large screen
+ */
+.brutalish-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 767px) {
+    .brutalish-container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .brutalish-container {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+/*
+██████╗ ██╗   ██╗████████╗████████╗ ██████╗ ███╗   ██╗███████╗
+██╔══██╗██║   ██║╚══██╔══╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝
+██████╔╝██║   ██║   ██║      ██║   ██║   ██║██╔██╗ ██║███████╗
+██╔══██╗██║   ██║   ██║      ██║   ██║   ██║██║╚██╗██║╚════██║
+██████╔╝╚██████╔╝   ██║      ██║   ╚██████╔╝██║ ╚████║███████║
+╚═════╝  ╚═════╝    ╚═╝      ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+*/
+
+.brutalish-button-primary {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--brutalish-button);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid var(--brutalish-button);
+    background: #FFFFFF;
+    box-shadow: 5px 5px var(--brutalish-button);
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.brutalish-button-primary:hover {
+    color: var(--brutalish-button);
+    transform: translate(0, 1px);
+    border: 2px solid var(--brutalish-button-hover);
+    box-shadow: 6px 6px 0 0 var(--brutalish-button-hover);
+}
+
+.brutalish-button-primary:active {
+    color: var(--brutalish-button);
+    border: 2px solid var(--brutalish-button-pressed);
+    box-shadow: 3px 3px 0 0 var(--brutalish-button-pressed);
+    transform: translate(6px, 5px);
+}
+
+/* Used on testimonials */
+.brutalish-button-primary.arrow {
+    padding: 16px;
+}
+
+/* Used for links */
+.brutalish-button-secondary {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--brutalish-button);
+    text-decoration: underline;
+    border: 0;
+    background: transparent;
+}
+
+.brutalish-button-secondary:hover {
+    color: var(--brutalish-button-hover);
+}
+
+.brutalish-button-secondary:active {
+    color: var(--brutalish-button-pressed);
+}
+
+/*
+██████╗ █████╗ ██████╗ ██████╗ ███████╗
+██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██║     ███████║██████╔╝██║  ██║███████╗
+██║     ██╔══██║██╔══██╗██║  ██║╚════██║
+╚██████╗██║  ██║██║  ██║██████╔╝███████║
+╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+*/
+
+/*
+.card {
+    width: 587px;
+    height: 330px;
+    margin: 0 auto;
+    background-color: var(--card-bg-white);
+    z-index: 1;
+}
+*/
+
+.card-details {
+    display: inline-block;
+    padding: 24px;
+    border-radius: 24px;
+    background-color: var(--card-bg-white);
+}
+
+
+/*
+███╗   ██╗ █████╗ ██╗   ██╗ █████╗ ██████╗ ██████╗
+████╗  ██║██╔══██╗██║   ██║██╔══██╗██╔══██╗██╔══██╗
+██╔██╗ ██║███████║██║   ██║███████║██████╔╝██████╔╝
+██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══██║██╔══██╗██╔══██╗
+██║ ╚████║██║  ██║ ╚████╔╝ ██║  ██║██████╔╝██║  ██║
+╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝
+*/
+
+.brutalish-navbar {
+    background-color: #FFFFFF;
+    max-height: 60px;
+}
+
+/*
+██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+██║  ██║██╔═══██╗████╗ ████║██╔════╝
+███████║██║   ██║██╔████╔██║█████╗
+██╔══██║██║   ██║██║╚██╔╝██║██╔══╝
+██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+*/
+
+.home h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.home p {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .col-6:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home img {
+    width: auto;
+    border: 8px solid black;
+    border-radius: 24px;
+}
+
+.home-ticker-section {
+    width: 100%;
+    background: var(--home-work-section);
+}
+
+.home-ticker-section .row {
+    display: flex;
+    align-items: center;
+}
+
+.home-ticker-section-heading {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.home-ticker-section-heading span {
+    font-weight: 700;
+}
+
+.home-ticker-section-tiny {
+    font-size: 24px;
+    font-weight: 275;
+    color: var(--ticker-text-color);
+}
+
+.home-work-display {
+    position: relative;
+    z-index: 0;
+}
+
+.home-work-display .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-work-display img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-work-display-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ticker for running through company names */
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-text {
+    position: absolute;
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 30px;
+    white-space: nowrap;
+    color: var(--ticker-text-color);
+}
+
+.ticker-text span {
+    margin-right: 20px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Testimonial section */
+.testimonials-section {
+    position: relative;
+    z-index: 2; /* Set higher to make sure the background image is visible on top of the sections above and below it*/
+    background-image: url("/images/misc/testimonial_wave_bg.svg");
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.testimonials-section-box {
+    display: inline-block;
+    padding: 36px 32px;
+    background-color: var(--card-bg-white);
+    box-shadow: 16px 16px var(--brutalish-button);
+    border-radius: 16px;
+}
+
+.testimonials-section .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials-section .col-2:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Testimonials Section ends */
+
+.lets-talk {
+    position: relative;
+    z-index: 1;
+}
+
+/* Contact section */
+.lets-talk .row {
+    display: flex;
+    align-items: center;
+}
+
+.lets-talk img {
+    max-width: 100%;
+    height: auto;
+}
+
+.lets-talk h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.lets-talk span {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--text-decoration-underline);;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+}
+
+.lets-talk img {
+    max-width: 100%;
+}
+
+/* Contact section ends*/
+
+/*
+███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗
+██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗
+█████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝
+██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗
+██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║
+╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝
+*/
+
+.footer {
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: auto;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/*
+██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
+██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝
+██║ █╗ ██║██║   ██║██████╔╝█████╔╝
+██║███╗██║██║   ██║██╔══██╗██╔═██╗
+╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗
+ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+*/
+
+.work {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.work-cover-image {
+    width: 36rem;
+    height: auto;
+    margin: auto;
+}
+
+.work-cover-details {
+    width: 36rem;
+    height: 14rem;
+    border-radius: 10px;
+    background: var(--work-page-project-details-bg);
+    padding: 1rem 1.2rem;
+    align-items: end;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-icon {
+    height: 16px;
+    width: 16px;
+}
+
+.work-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.work-tags {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--work-page-desc-tags-font);
+}
+
+.work-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/*
+██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+*/
+
+.project-tag {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 3;
+    color: var(--project-tag-line-font);
+}
+
+.project-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.5;
+    color: var(--project-title-font);
+}
+
+.project-desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.project-award-icon {
+    color: greenyellow;
+    height: 24px;
+    width: 24px;
+}
+
+.project-award {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    content: var(--project-award-font);
+}
+
+.project-award a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+/*
+Scroll progress indicator shown on top
+of every project page.
+*/
+/*
+TODO Adjust width according to brutalish-container for different viewports
+ */
+
+.scroll-progress-container {
+    position: fixed;
+    width: 85%;
+    height: 4px;
+    top: 0;
+    background-color: var(--project-page-scroll-bar-container);
+}
+
+.scroll-progress-bar {
+    width: 0;
+    height: 100%;
+    background: var(--project-page-scroll-bar);
+}
+
+/*
+End scroll progress bar
+*/
+
+/*
+Image slider to show the transition of wireframes into the final UI.
+Shown on every project page.
+ */
+
+@layer demo {
+    .compare {
+        display: grid;
+
+        > * {
+            grid-area: 1 / 1;
+        }
+
+        > section {
+            display: grid;
+            place-content: center;
+        }
+
+        .before {
+            /*mask: linear-gradient(to right, #000 0, var(--pos, 50%), #0000 0);*/
+            mask: linear-gradient(greenyellow, red);
+        }
+
+        .after {
+            mask: linear-gradient(to right, #0000 0, var(--pos, 50%), #000 0);
+        }
+
+        > input[type="range"] {
+            z-index: 1;
+            appearance: none;
+            background: transparent;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+
+            &::-webkit-slider-thumb {
+                appearance: none;
+                inline-size: 4px;
+                block-size: 450px;
+                background-color: red;
+            }
+
+            &::-moz-range-thumb {
+                appearance: none;
+                inline-size: 4px;
+                block-size: 10dvh;
+                background-color: greenyellow;
+            }
+        }
+    }
+
+    img {
+        max-block-size: 80dvh;
+        max-inline-size: auto;
+    }
+}
+
+@layer demo.support {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    html {
+        block-size: 100%;
+        color-scheme: dark light;
+    }
+
+    body {
+        min-block-size: 100%;
+        font-family: system-ui, sans-serif;
+        display: grid;
+    }
+}
+
+/*
+End image slider
+*/
+
+.process-active {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--project-process-active);
+}
+
+.process-inactive {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--project-process-inactive);
+}
+
+.process-discover {
+    background-color: var(--project-process-bg);
+    border-radius: 24px 24px 0 0;
+    padding: 32px 38px 32px 38px;
+}
+
+.process-discover-elements {
+    background-color: white;
+    border-radius: 24px;
+    padding: 16px 20px 16px 20px;
+}
+
+.project-rounded-img {
+    width: 100%;
+    border-radius: 0 0 24px 24px;
+}
+
+.project-subheadings {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+.project-table-border {
+    border: var(--bs-border-width) var(--bs-border-style) var(--project-process-table-borders) !important;
+}
+
+.project-table-border-start {
+    border-color: var(--project-process-table-borders) !important;
+}
+
+.project-table-heading {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-table-subheading {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*
+ █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗
+██╔══██╗██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝
+███████║██████╔╝██║   ██║██║   ██║   ██║
+██╔══██║██╔══██╗██║   ██║██║   ██║   ██║
+██║  ██║██████╔╝╚██████╔╝╚██████╔╝   ██║
+╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝    ╚═╝
+*/
+
+.about-me {
+    font-size: 20px;
+    font-weight: 400;
+}

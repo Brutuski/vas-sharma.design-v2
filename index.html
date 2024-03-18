@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vas - Design Portfolio</title>
+
+    <!-- Mobile Specific Metas
+================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Vas Sharma - UI/UX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="author" content="Vas Sharma">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg?v=2"/>
+
+    <!-- ** Plugins Needed for the Project ** -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+            crossorigin="anonymous"></script>
+
+    <!-- Custom Stylesheet -->
+    <link href="css/brutalish-styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: var(--main-bg);
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand brutalish-navbar" id="navbar">
+    <div class="d-flex brutalish-container">
+        <a class="navbar-brand mx-auto" href="index.html">
+            <img src="images/logo.svg" alt="logo" width="30" height="30">
+        </a>
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="brutalish-container home mt-5" id="hero">
+    <div class="row">
+        <div class="col-6">
+            <h1>Hi! I'm Vas,</h1>
+            <p class="mt-5">I create design ecosystems for web and mobile applications</p>
+            <button class="brutalish-button-primary me-5" onclick="location.href='work.html'">See My Work</button>
+            <button class="brutalish-button-secondary" onclick="window.open('./resume/Vas-Sharma-Resume.pdf', '_blank')">
+                View Resume
+            </button>
+        </div>
+        <div class="col-6">
+            <img src="images/profile_photo.jpg" alt="profile-photo">
+        </div>
+    </div>
+</section>
+
+<section class="home-ticker-section mt-5" id="worked-with">
+    <div class="brutalish-container">
+        <p class="home-ticker-section-heading">I have worked with</p>
+        <div class="ticker-container">
+            <div class="ticker-text">
+                <span>Xane AI</span>
+                <span>Zuellig Pharma</span>
+                <span>Derek O'Brien & Associates</span>
+                <span>Jhatkaa.org</span>
+                <span>Sumtracker</span>
+                <span>Harper Collins Publishers</span>
+                <span>Empower Pragati</span>
+                <span>Quest Alliance</span>
+                <span>SnapPermit</span>
+            </div>
+        </div>
+        <!-- TODO the col-6 are overlapping on the laptop screen -->
+        <div class="row mt-5">
+            <div class="col-6">
+                <img src="images/misc/home_design.gif" alt="creative-design-gif">
+            </div>
+            <div class="col-6">
+                <p class="home-ticker-section-heading">To build entire products from <span>start</span> to
+                    <span>finish*</span></p>
+                <p class="home-ticker-section-tiny">*& some in the middle too</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brutalish-container home-work-display mt-5" id="my-work">
+    <h2 class="text-center mb-5">My Work</h2>
+    <div class="row mb-3">
+        <div class="col-6">
+            <img src="images/covers/clean-bangalore-cover.png" alt="clean-bangalore-cover">
+        </div>
+        <div class="col-6">
+            <div class="card-details">
+                <img class="work-icon mb-2" src="images/icons/icon_desktop.svg" alt="icon-desktop">
+                <img class="work-icon ms-2 mb-2" src="images/icons/icon_phone.svg" alt="icon-phone">
+                <p class="work-title">Mann Malang</p>
+                <p>Empowering citizens and government bodies to keep their city clean together</p>
+                <p class="work-tags">Branding • UI & UX • Illustration • Animation</p>
+                <a href="case-studies/clean-bangalore.html" class="work-button">View</a>
+            </div>
+        </div>
+    </div>
+    <!-- TODO - Align card to the center instead of left -->
+    <div class="row mb-3">
+        <div class="col-6">
+            <div class="card-details">
+                <img class="work-icon mb-2" src="images/icons/icon_desktop.svg" alt="icon-desktop">
+                <img class="work-icon ms-2 mb-2" src="images/icons/icon_phone.svg" alt="icon-phone">
+                <p class="work-title">Mann Malang</p>
+                <p>Empowering citizens and government bodies to keep their city clean together</p>
+                <p class="work-tags">Branding • UI & UX • Illustration • Animation</p>
+                <a href="case-studies/clean-bangalore.html" class="work-button">View</a>
+            </div>
+        </div>
+        <div class="col-6">
+            <img src="images/covers/work-mann-malang-cover.png" alt="clean-bangalore-cover">
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-6">
+            <img src="images/covers/work-mann-malang-cover.png" alt="clean-bangalore-cover">
+        </div>
+        <div class="col-6">
+            <div class="card-details">
+                <img class="work-icon mb-2" src="images/icons/icon_desktop.svg" alt="icon-desktop">
+                <img class="work-icon ms-2 mb-2" src="images/icons/icon_phone.svg" alt="icon-phone">
+                <p class="work-title">Mann Malang</p>
+                <p>Empowering citizens and government bodies to keep their city clean together</p>
+                <p class="work-tags">Branding • UI & UX • Illustration • Animation</p>
+                <a href="case-studies/clean-bangalore.html" class="work-button">View</a>
+            </div>
+        </div>
+    </div>
+    <div class="home-work-display-button">
+        <button class="brutalish-button-primary" onclick="location.href='work.html'">View All</button>
+    </div>
+</section>
+
+<section class="testimonials-section" id="testimonials">
+    <div class="brutalish-container mt-5">
+        <h2 class="text-center mb-5">Testimonials</h2>
+        <div class="row mb-5">
+            <div class="col-2">
+                <button class="brutalish-button-primary arrow" onclick="location.href='work.html'" id="prev-button">
+                    <img src="images/icons/icon_arrow_back.svg" alt="arrow-back">
+                </button>
+            </div>
+            <div class="col-8 testimonials-section-box mb-5">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-2">
+                <button class="brutalish-button-primary arrow" onclick="location.href='work.html'" id="next-button">
+                    <img src="images/icons/icon_arrow_forward.svg" alt="arrow-forward">
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brutalish-container lets-talk mt-5" id="contact-section">
+    <div class="row">
+        <div class="col-6">
+            <h2>Let's talk and <span>build your vision</span> together.</h2>
+            <button class="brutalish-button-primary me-5" onclick="location.href='mailto:vasundhara.14@gmail.com?subject=Reaching out via Portfolio Site'">Email Me</button>
+            <button class="brutalish-button-secondary" onclick="window.open('./resume/Vas-Sharma-Resume.pdf', '_blank')">
+                Schedule A Meeting
+            </button>
+        </div>
+        <div class="col-6">
+            <img src="images/misc/contact_banner.svg" alt="contact-banner">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer" id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p class="mb-0" style="color: var(--footer-text-color-alternate)">Copyright &copy;<script>
+                const CurrentYear = (new Date().getFullYear()).toString();
+                document.write(CurrentYear)
+            </script>
+                Vasundhara Sharma
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Main Script -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

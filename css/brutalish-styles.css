@@ -69,7 +69,6 @@ TODO Define 50% for large screen
 @media (min-width: 1200px) {
     .brutalish-container {
         width: 75%;
-        margin: auto;
     }
 }
 
@@ -172,6 +171,22 @@ TODO Define 50% for large screen
     background-color: #FFFFFF;
     max-height: 60px;
 }
+
+@media (max-width: 992px) {
+    .navbar-brand {
+        margin-right: 10px; /* Align to the left on small screens */
+        margin-left: auto; /* Add some spacing */
+    }
+}
+
+/*
+██╗███╗   ███╗ █████╗  ██████╗ ███████╗
+██║████╗ ████║██╔══██╗██╔════╝ ██╔════╝
+██║██╔████╔██║███████║██║  ███╗█████╗
+██║██║╚██╔╝██║██╔══██║██║   ██║██╔══╝
+██║██║ ╚═╝ ██║██║  ██║╚██████╔╝███████╗
+╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+*/
 
 /*
 ██╗  ██╗ ██████╗ ███╗   ███╗███████╗
@@ -293,24 +308,27 @@ TODO Define 50% for large screen
     z-index: 2; /* Set higher to make sure the background image is visible on top of the sections above and below it*/
     background-image: url("/images/misc/testimonial_wave_bg.svg");
     background-size: 100% auto;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
     height: 100vh;
 }
 
 .testimonials-section-box {
-    display: inline-block;
     padding: 36px 32px;
     background-color: var(--card-bg-white);
     box-shadow: 16px 16px var(--brutalish-button);
     border-radius: 16px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .testimonials-section .row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .testimonials-section .col-2:last-child {
@@ -318,6 +336,15 @@ TODO Define 50% for large screen
     justify-content: flex-end;
 }
 
+.testimonials-section-person {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.testimonials-section-company {
+    font-size: 12px;
+    font-weight: 400;
+}
 /* Testimonials Section ends */
 
 .lets-talk {

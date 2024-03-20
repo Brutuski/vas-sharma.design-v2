@@ -347,25 +347,33 @@ TODO Define 50% for large screen
 }
 /* Testimonials Section ends */
 
+/* Contact section */
 .lets-talk {
     position: relative;
     z-index: 1;
 }
 
-/* Contact section */
 .lets-talk .row {
     display: flex;
     align-items: center;
 }
 
-.lets-talk img {
-    max-width: 100%;
-    height: auto;
+.lets-talk .col-6:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.lets-talk .col-6:last-child img {
+    height: 100%;
+    width: auto;
 }
 
 .lets-talk h2 {
+    position: relative;
     font-size: 28px;
     font-weight: 400;
+    z-index: 1;
 }
 
 .lets-talk span {
@@ -374,10 +382,7 @@ TODO Define 50% for large screen
     text-decoration-color: var(--text-decoration-underline);;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
-}
-
-.lets-talk img {
-    max-width: 100%;
+    position: relative;
 }
 
 /* Contact section ends*/

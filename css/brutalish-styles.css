@@ -385,6 +385,39 @@ TODO Define 50% for large screen
     position: relative;
 }
 
+#decorative-star {
+    position: relative;
+    padding: 0.03em;
+}
+
+#decorative-star:before {
+    content: url("/images/misc/decorative_star.svg");
+    position: absolute;
+    bottom: -0.55em;
+    left: -0.6em;
+}
+
+@media screen and (max-width: 600px) {
+    #decorative-star:before {
+        bottom: 0.8em;
+        left: 2.3em;
+    }
+}
+
+#decorative-star:after {
+    content: url("/images/misc/decorative_star.svg");
+    position: absolute;
+    top: -0.6em;
+    right: -0.4em;
+}
+
+@media screen and (max-width: 600px) {
+    #decorative-star:after {
+        top: 2em;
+        right: 8.8em;
+    }
+
+}
 /* Contact section ends*/
 
 /*

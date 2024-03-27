@@ -181,6 +181,16 @@ TODO Define 50% for large screen
     }
 }
 
+
+.brutalish-navbar .nav-link {
+    font-size: 1rem; !important;
+    font-weight: 400;
+}
+
+.brutalish-navbar .active {
+    font-weight: 700;
+}
+
 /*
 ██╗███╗   ███╗ █████╗  ██████╗ ███████╗
 ██║████╗ ████║██╔══██╗██╔════╝ ██╔════╝

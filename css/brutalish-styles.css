@@ -17,6 +17,8 @@ body {
 
     --card-bg-white: #FFFFFF;
 
+    --main-divider: #E0E0E0;
+
     --testimonail-dot-indicator: #D9D9D9;
     --testimonail-dot-indicator-active: #000000;
 
@@ -197,6 +199,7 @@ TODO Define 50% for large screen
 ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
 */
 
+/* Hero*/
 .home h1 {
     font-size: 64px;
     font-weight: 600;
@@ -223,6 +226,7 @@ TODO Define 50% for large screen
     border: 8px solid black;
     border-radius: 24px;
 }
+/* Hero ends*/
 
 .home-ticker-section {
     width: 100%;
@@ -271,8 +275,26 @@ TODO Define 50% for large screen
     justify-content: center;
 }
 
-/* Ticker for running through company names */
+.work-layout-alt .row {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+.work-layout-alt .col-md-6:first-child {
+    display: flex;
+    justify-content: flex-end;
+}
 
+/* Divider */
+.divider {
+    background-color: var(--main-divider);
+    height: 2px;
+    border: none;
+}
+/* Divider Ends*/
+
+/* Ticker for running through company names */
 .ticker-container {
     width: 100%;
     overflow: hidden;
@@ -453,8 +475,13 @@ TODO Define 50% for large screen
 */
 
 .work {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.work h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .work-cover-image {
@@ -484,18 +511,21 @@ TODO Define 50% for large screen
 }
 
 .work-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 .work-tags {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
     color: var(--work-page-desc-tags-font);
 }
 
+/*
+TODO Remove this from project page and delete
+ */
 .work-button {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: #000000;
     text-decoration: underline;

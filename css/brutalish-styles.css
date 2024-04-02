@@ -183,7 +183,8 @@ TODO Define 50% for large screen
 
 
 .brutalish-navbar .nav-link {
-    font-size: 1rem; !important;
+    font-size: 1rem;
+!important;
     font-weight: 400;
 }
 
@@ -236,6 +237,7 @@ TODO Define 50% for large screen
     border: 8px solid black;
     border-radius: 24px;
 }
+
 /* Hero ends*/
 
 .home-ticker-section {
@@ -286,11 +288,11 @@ TODO Define 50% for large screen
 }
 
 .work-layout-alt .row {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
- 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .work-layout-alt .col-md-6:first-child {
     display: flex;
     justify-content: flex-end;
@@ -302,6 +304,7 @@ TODO Define 50% for large screen
     height: 2px;
     border: none;
 }
+
 /* Divider Ends*/
 
 /* Ticker for running through company names */
@@ -377,6 +380,7 @@ TODO Define 50% for large screen
     font-size: 12px;
     font-weight: 400;
 }
+
 /* Testimonials Section ends */
 
 /* Contact section */
@@ -450,6 +454,7 @@ TODO Define 50% for large screen
     }
 
 }
+
 /* Contact section ends*/
 
 /*
@@ -488,6 +493,7 @@ TODO Define 50% for large screen
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 }
+
 .work h1 {
     font-size: 40px;
     font-weight: 400;
@@ -532,16 +538,6 @@ TODO Define 50% for large screen
 }
 
 /*
-TODO Remove this from project page and delete
- */
-.work-button {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000000;
-    text-decoration: underline;
-}
-
-/*
 ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
 ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
 ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
@@ -551,27 +547,31 @@ TODO Remove this from project page and delete
 */
 
 .project-tag {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 3;
+    font-size: 0.9rem;
+    font-weight: 400;
     color: var(--project-tag-line-font);
 }
 
 .project-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 0.5;
     color: var(--project-title-font);
+    margin-bottom: 0;
 }
 
 .project-desc {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 30px;
+    margin-top: 0;
+}
+
+.project-font-general {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: black;
 }
 
 .project-award-icon {
-    color: greenyellow;
     height: 24px;
     width: 24px;
 }
@@ -589,6 +589,16 @@ TODO Remove this from project page and delete
     text-decoration: underline;
     font-weight: bold;
     color: black;
+}
+
+.project-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-other {
+    max-width: 100%;
+    height: auto;
 }
 
 /*

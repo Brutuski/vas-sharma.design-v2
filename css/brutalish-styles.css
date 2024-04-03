@@ -32,7 +32,7 @@ body {
     --work-page-desc-tags-font: #757575;
 
     --project-page-scroll-bar-container: #CCCCCC;
-    --project-page-scroll-bar: #E1F5C8;
+    --project-page-scroll-bar: #F08705;
     --project-tag-line-font: #777777;
     --project-title-font: #4C4C4C;
     --project-award-font: #4C4C4C;
@@ -59,6 +59,7 @@ TODO Define 50% for large screen
 .brutalish-container {
     width: 70%;
     margin: 0 auto;
+    position: relative;
 }
 
 /* Adjustments for mobile responsiveness */
@@ -562,6 +563,7 @@ TODO Define 50% for large screen
 .project-desc {
     font-size: 1.25rem;
     font-weight: 400;
+    color: var(--project-title-font);
     margin-top: 0;
 }
 
@@ -571,24 +573,20 @@ TODO Define 50% for large screen
     color: black;
 }
 
-.project-award-icon {
-    height: 24px;
-    width: 24px;
+.project-font-general a {
+    font-weight: 600;
+    color: var(--project-award-font);
+}
+
+.project-font-general a:hover {
+    color: var(--brutalish-button-hover);
 }
 
 .project-award {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    content: var(--project-award-font);
-}
-
-.project-award a {
-    text-decoration: underline;
-    font-weight: bold;
-    color: black;
+    background-color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.5rem;
+    display: inline-block;
 }
 
 .project-section-title {
@@ -602,19 +600,15 @@ TODO Define 50% for large screen
 }
 
 /*
-Scroll progress indicator shown on top
-of every project page.
+Scroll progress indicator shown on top of every project page.
+Properties for this container are adjusted dynamically depending on the scroll position of the page via js
 */
-/*
-TODO Adjust width according to brutalish-container for different viewports
- */
-
 .scroll-progress-container {
-    position: fixed;
-    width: 85%;
+    position: relative;
+    width: 100%;
     height: 4px;
-    top: 0;
     background-color: var(--project-page-scroll-bar-container);
+    z-index: 9999;
 }
 
 .scroll-progress-bar {
@@ -622,10 +616,7 @@ TODO Adjust width according to brutalish-container for different viewports
     height: 100%;
     background: var(--project-page-scroll-bar);
 }
-
-/*
-End scroll progress bar
-*/
+/* End scroll progress bar */
 
 /*
 Image slider to show the transition of wireframes into the final UI.

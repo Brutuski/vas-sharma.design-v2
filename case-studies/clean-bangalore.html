@@ -27,6 +27,7 @@
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="../js/brutalish_scroll_progress.js"></script>
+    <script type="text/javascript" src="../js/brutalish-image-comparison.js"></script>
     <!-- Custom Stylesheet -->
     <link href="../css/brutalish-styles.css" rel="stylesheet">
     <style>
@@ -83,7 +84,7 @@
 <section class="brutalish-container mt-5 mb-5" id="overview-role">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <p class="project-section-title">Overview</p>
+            <p class="project-section-heading">Overview</p>
             <p class="project-font-general">Jhatkaa is an organisation that empowers citizens to take action with the
                 help of various campaigns.
                 Namma Clean Bengaluru is one such initiative to tackle the problem of garbage dumping and burning by
@@ -92,7 +93,7 @@
                 clean.</p>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <p class="project-section-title">My Role</p>
+            <p class="project-section-heading">My Role</p>
             <p class="project-font-general">As a UI and UX designer, I worked on the user experience, responsive UI
                 designs, illustration and
                 animations closely with the Executive Director, Director of Technology, Campaign Manager and Developer
@@ -134,16 +135,14 @@
             </div>
         </div>
         <div class="col-md-8">
-            <div class="compare">
-                <div class="before">
-                    <img style="height: 450px" src="https://assets.codepen.io/2585/Runner.svg" alt=""/>
+            <div class="project-image-comparison">
+                <div class="image-container">
+                    <img class="before-image" src="../images/projects/clean-bangalore/clean-bangalore-03.png" alt="comparison-image-1">
+                    <img src="../images/projects/clean-bangalore/clean-bangalore-06.png" alt="comparison-image-2">
+                    <div class="project-image-comparison-slider-line"></div>
+                    <input type="range" class="project-image-comparison-slider" min="0" max="100" value="50"/>
                 </div>
-                <div class="after">
-                    <img style="height: 450px" src="https://assets.codepen.io/2585/Roboto.svg" alt=""/>
-                </div>
-                <input type="range" id="range" step="0.1">
             </div>
-            <script src="../js/brutalish_scroll_progress.js"></script>
         </div>
     </div>
 </section>

@@ -27,6 +27,7 @@
 
     <!-- Custom JavaScript -->
     <script type="text/javascript" src="../js/brutalish_scroll_progress.js"></script>
+    <script type="text/javascript" src="../js/brutalish-image-comparison.js"></script>
     <!-- Custom Stylesheet -->
     <link href="../css/brutalish-styles.css" rel="stylesheet">
     <style>
@@ -110,7 +111,14 @@
             </div>
         </div>
         <div class="col-md-8 col-sm-12">
-            <img src="../images/projects/xane-tdc/xane-tdc-deliverables.png" alt="xane-tdc-app-screens">
+            <div class="project-image-comparison">
+                <div class="image-container">
+                    <img class="before-image" src="../images/projects/xane-tdc/xane-tdc-slider-before-image.png" alt="comparison-image-1">
+                    <img src="../images/projects/xane-tdc/xane-tdc-slider-after-image.png" alt="comparison-image-2">
+                    <div class="project-image-comparison-slider-line"></div>
+                    <input type="range" class="project-image-comparison-slider" min="0" max="100" value="50"/>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -203,6 +203,12 @@ TODO Define 50% for large screen
 ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝
 */
 
+.general-img {
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
 /*
 ██╗  ██╗ ██████╗ ███╗   ███╗███████╗
 ██║  ██║██╔═══██╗████╗ ████║██╔════╝
@@ -243,6 +249,7 @@ TODO Define 50% for large screen
 }
 /* Hero ends*/
 
+/* Home ticker section*/
 .home-ticker-section {
     width: 100%;
     background: var(--home-work-section);
@@ -268,6 +275,7 @@ TODO Define 50% for large screen
     font-weight: 275;
     color: var(--ticker-text-color);
 }
+/* Home ticker section ends*/
 
 .home-work-display {
     position: relative;

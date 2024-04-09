@@ -235,11 +235,12 @@ TODO Define 50% for large screen
 }
 
 .home img {
+    max-width: 100%;
     width: auto;
     border: 8px solid black;
     border-radius: 24px;
+    object-fit: cover;
 }
-
 /* Hero ends*/
 
 .home-ticker-section {

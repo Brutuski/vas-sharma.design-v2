@@ -144,16 +144,6 @@ TODO Define 50% for large screen
 ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
 */
 
-/*
-.card {
-    width: 587px;
-    height: 330px;
-    margin: 0 auto;
-    background-color: var(--card-bg-white);
-    z-index: 1;
-}
-*/
-
 .card-details {
     display: inline-block;
     padding: 24px;
@@ -309,14 +299,15 @@ TODO Define 50% for large screen
     justify-content: flex-end;
 }
 
+
 /* Divider */
 .divider {
     background-color: var(--main-divider);
     height: 2px;
     border: none;
 }
-
 /* Divider Ends*/
+
 
 /* Ticker for running through company names */
 .ticker-container {
@@ -347,6 +338,8 @@ TODO Define 50% for large screen
         transform: translateX(-100%);
     }
 }
+/* Ticker ends */
+
 
 /* Testimonial section */
 .testimonials-section {
@@ -391,8 +384,8 @@ TODO Define 50% for large screen
     font-size: 12px;
     font-weight: 400;
 }
-
 /* Testimonials Section ends */
+
 
 /* Contact section */
 .lets-talk {
@@ -465,8 +458,8 @@ TODO Define 50% for large screen
     }
 
 }
+/* Contact section ends */
 
-/* Contact section ends*/
 
 /*
 ███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗
@@ -490,6 +483,7 @@ TODO Define 50% for large screen
     font-size: 15px;
     font-weight: 100;
 }
+
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗
@@ -547,6 +541,7 @@ TODO Define 50% for large screen
     font-weight: 400;
     color: var(--work-page-desc-tags-font);
 }
+
 
 /*
 ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
@@ -614,6 +609,7 @@ TODO Define 50% for large screen
     height: auto;
 }
 
+
 /*
 Scroll progress indicator shown on top of every project page.
 Properties for this container are adjusted dynamically depending on the scroll position of the page via js
@@ -633,10 +629,11 @@ Properties for this container are adjusted dynamically depending on the scroll p
 }
 /* End scroll progress bar */
 
+
 /*
 Image slider to show the transition of wireframes into the final UI.
 Shown on every project page.
- */
+*/
 .project-image-comparison {
     max-width: 100%;
     overflow: hidden;
@@ -679,10 +676,8 @@ Shown on every project page.
     background: var(--project-page-image-slider-line);
     z-index: 2;
 }
+/* End image compare slider */
 
-/*
-End image compare slider
-*/
 
 .process-active {
     font-size: 14px;
@@ -754,6 +749,7 @@ End image compare slider
     font-size: 12px;
     font-weight: 400;
 }
+
 
 /*
 ██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗        ██╗     █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗

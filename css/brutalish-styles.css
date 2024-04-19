@@ -597,6 +597,12 @@ TODO Define 50% for large screen
     font-weight: 600;
 }
 
+.project-disclaimer {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--project-tag-line-font);
+}
+
 .project-font-general {
     font-size: 0.9rem;
     font-weight: 400;
@@ -640,6 +646,7 @@ Properties for this container are adjusted dynamically depending on the scroll p
     height: 4px;
     background-color: var(--project-page-scroll-bar-container);
     z-index: 9999;
+    top: 0;
 }
 
 .scroll-progress-bar {
@@ -707,9 +714,9 @@ Shown on every project page.
 
 /* End image compare slider */
 
-
+/* TODO What to do if it wraps on certain screens and the last chip goes to the next line */
 .process-active {
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
     text-align: center;
     background: var(--project-process-active);
     border-radius: 0.5rem;
@@ -719,7 +726,7 @@ Shown on every project page.
 }
 
 .process-inactive {
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
     text-align: center;
     background: var(--project-process-inactive);
     border-radius: 0.5rem;
@@ -732,20 +739,6 @@ Shown on every project page.
     color: var(--project-process-active);
     text-decoration: none;
     padding: 0;
-    margin: 0;
-}
-
-.process-bg {
-    background-color: var(--project-process-bg);
-    border-radius: 1.5rem;
-    padding: 2rem 2.37rem 2rem 2.37rem;
-}
-
-.process-bg-img-negative-padding {
-    margin: -2rem -2.37rem -2rem -2.37rem;
-}
-
-.process-bg-text-spacing {
     margin: 0;
 }
 
@@ -779,6 +772,20 @@ Shown on every project page.
     margin-left: auto;
     margin-right: auto;
 }
+
+#user-type .col-lg-8 img, #user-type .col-md-8 img, #user-type .col-sm-12 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#user-type .col-lg-8:last-child, #user-type .col-md-8:last-child {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
 
 .project-rounded-img {
     width: 100%;

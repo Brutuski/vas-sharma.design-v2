@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    color: #000000;
 }
 
 :root {
@@ -39,7 +40,7 @@ body {
     --project-page-image-slider-line: #F08705;
     --project-process-bg: #F7F1EC;
     --project-process-active: #F08705;
-    --project-process-inactive: #9F9F9F;
+    --project-process-inactive: #F087051E;
     --project-process-discover-elements-statistics: #89694F;
     --project-process-table-borders: #FFE5CE;
 }
@@ -575,23 +576,30 @@ TODO Define 50% for large screen
 }
 
 .project-title {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    color: var(--project-title-font);
     margin-bottom: 0;
 }
 
 .project-desc {
     font-size: 1.25rem;
     font-weight: 400;
-    color: var(--project-title-font);
     margin-top: 0;
+}
+
+.project-section-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-section-subheading {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .project-font-general {
     font-size: 0.9rem;
     font-weight: 400;
-    color: black;
 }
 
 .project-font-general a {
@@ -610,14 +618,10 @@ TODO Define 50% for large screen
     display: inline-block;
 }
 
-.project-section-heading {
+.project-process-statistics {
     font-size: 1.5rem;
     font-weight: 600;
-}
-
-.project-section-subheading {
-    font-size: 0.9rem;
-    font-weight: 600;
+    color: var(--project-process-discover-elements-statistics);
 }
 
 .project-other {
@@ -692,28 +696,48 @@ Shown on every project page.
     background: var(--project-page-image-slider-line);
     z-index: 2;
 }
+.project-image-comparison .project-image-comparison-slider-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(-50%, -50%);
+}
+
 /* End image compare slider */
 
 
 .process-active {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--project-process-active);
+    padding: 0.25rem 1rem;
+    text-align: center;
+    background: var(--project-process-active);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
 }
 
 .process-inactive {
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--project-process-inactive);
+    padding: 0.25rem 1rem;
+    text-align: center;
+    background: var(--project-process-inactive);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--project-process-active);
 }
 
 .process-inactive a {
+    color: var(--project-process-active);
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
 .process-bg {
     background-color: var(--project-process-bg);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     padding: 2rem 2.37rem 2rem 2.37rem;
 }
 
@@ -727,23 +751,42 @@ Shown on every project page.
 
 .process-discover {
     background-color: var(--project-process-bg);
-    border-radius: 24px 24px 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
     padding: 32px 38px 32px 38px;
 }
 
 .process-discover-elements {
     background-color: white;
-    border-radius: 24px;
-    padding: 16px 20px 16px 20px;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.process-define-user-roles {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 3.15rem 0;
+}
+
+.process-define-user-roles .row {
+    display: flex;
+    justify-content: center;
+}
+
+.process-define-user-roles img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-rounded-img {
     width: 100%;
-    border-radius: 0 0 24px 24px;
+    border-radius: 0 0 1.5rem 1.5rem;
 }
-
+/* TODO Remove this */
 .project-subheadings {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
     color: black;
 }
@@ -763,6 +806,11 @@ Shown on every project page.
 
 .project-table-subheading {
     font-size: 12px;
+    font-weight: 400;
+}
+
+.other-projects-heading {
+    font-size: 1.25rem;
     font-weight: 400;
 }
 

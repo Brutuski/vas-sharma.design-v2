@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector(".project-image-comparison-slider");
     const beforeImage = document.querySelector(".before-image");
     const sliderLine = document.querySelector(".project-image-comparison-slider-line");
+    const sliderIcon = document.querySelector(".project-image-comparison-slider-icon");
 
     slider.addEventListener("input", function() {
         let sliderValue = this.value;
@@ -18,5 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
          */
         beforeImage.style.width = percentage;
         sliderLine.style.left = percentage;
+        sliderIcon.style.left = percentage;
     });
 });

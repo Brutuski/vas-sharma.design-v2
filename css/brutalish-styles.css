@@ -831,22 +831,40 @@ Shown on every project page.
  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝        ╚═╝  ╚═╝╚═════╝  ╚═════╝  ╚═════╝    ╚═╝
 */
 
+#contact-banner .row:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .secondary-page-img {
     width: 100%;
     object-fit: cover;
 }
 
 .secondary-page-p {
-    font-size: 1.25rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
-.secondary-page-h1 {
+.secondary-page-heading {
     font-size: 2.5rem;
     font-weight: 400;
 }
 
-.secondary-page-h2 {
+.secondary-page-subheading {
     font-size: 1.75rem;
     font-weight: 400;
+}
+
+.schedule-meeting-button {
+    display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .schedule-meeting-button {
+        display: block; /* Makes the button visible on mobile devices */
+    }
 }

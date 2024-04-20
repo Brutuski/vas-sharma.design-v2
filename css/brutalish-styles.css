@@ -335,6 +335,7 @@ TODO Define 50% for large screen
     height: 2px;
     border: none;
 }
+
 /* Divider Ends*/
 
 
@@ -781,6 +782,12 @@ Shown on every project page.
     padding: 32px 38px 32px 38px;
 }
 
+@media (max-width: 768px) {
+    .process-discover {
+        padding: 1rem;
+    }
+}
+
 .process-discover-elements {
     background-color: white;
     border-radius: 1.5rem;
@@ -819,19 +826,12 @@ Shown on every project page.
     border-radius: 1.5rem;
 }
 
-
 .project-rounded-img {
     width: 100%;
     border-radius: 0 0 1.5rem 1.5rem;
 }
 
-/* TODO Remove this */
-.project-subheadings {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: black;
-}
-
+/* Project Tables */
 .project-table-border {
     border: var(--bs-border-width) var(--bs-border-style) var(--project-process-table-borders) !important;
 }
@@ -841,14 +841,47 @@ Shown on every project page.
 }
 
 .project-table-heading {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .project-table-subheading {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
 }
+
+.project-table-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.project-table-content {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .project-table-heading {
+        font-size: 0.8rem;
+    }
+
+    .project-table-subheading {
+        font-size: 0.75rem;
+    }
+
+    .table img {
+        width: 50px;
+        height: auto;
+    }
+
+    .col-md-8, .col-sm-8 {
+        padding-left: 10px;
+    / / Reduce padding
+    }
+}
+
+/*Project table ends */
 
 .other-projects-heading {
     font-size: 1.25rem;

@@ -1,10 +1,10 @@
 <h2 align="center">Personal Portfolio Site</h2>
-<div style="text-align: center;">
+<p align: center;>
   <img src="images/favicon.svg" style="height: 48px" alt="favicon">
-</div>
-<div style="text-align: center;">
+</p>
+<p align: center>
   <img src="https://api.netlify.com/api/v1/badges/e2cad718-3286-4c17-a80b-4438ef9bc580/deploy-status" alt="netlify-status-badge">
-</div>
+</p>
 
 Personal Portfolio Site for [Vas Sharma](https://www.linkedin.com/in/vas-sharma/).
 

@@ -211,12 +211,12 @@ TODO Define 50% for large screen
 
 /* Hero*/
 .home h1 {
-    font-size: 64px;
+    font-size: 3rem;
     font-weight: 600;
 }
 
 .home p {
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -245,6 +245,13 @@ TODO Define 50% for large screen
 .home-ticker-section {
     width: 100%;
     background: var(--home-work-section);
+    margin-top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+    .home-ticker-section {
+        margin-top: 4rem;
+    }
 }
 
 .home-ticker-section .row {
@@ -252,20 +259,40 @@ TODO Define 50% for large screen
     align-items: center;
 }
 
-.home-ticker-section-heading {
-    font-size: 40px;
+.home-section-heading {
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 40px;
 }
 
-.home-ticker-section-heading span {
+.home-section-heading span {
     font-weight: 700;
 }
 
 .home-ticker-section-tiny {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 275;
     color: var(--ticker-text-color);
+}
+
+.temp-ticker-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--ticker-text-color);
+    line-height: 2;
+    word-spacing: 0.2rem;
+}
+
+.homepage-video {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage-video {
+        margin-top: 1rem;
+    }
 }
 
 /* Home ticker section ends*/
@@ -297,11 +324,10 @@ TODO Define 50% for large screen
     justify-content: space-between;
 }
 
-.work-layout-alt .col-md-6:first-child {
+.work-layout-alt .col-md-6:last-child {
     display: flex;
     justify-content: flex-end;
 }
-
 
 /* Divider */
 .divider {
@@ -309,7 +335,6 @@ TODO Define 50% for large screen
     height: 2px;
     border: none;
 }
-
 /* Divider Ends*/
 
 
@@ -459,10 +484,10 @@ TODO Define 50% for large screen
     left: -0.6em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #decorative-star:before {
-        bottom: 0.8em;
-        left: 2.3em;
+        bottom: 2.1em;
+        left: -0.3em;
     }
 }
 
@@ -473,10 +498,10 @@ TODO Define 50% for large screen
     right: -0.4em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #decorative-star:after {
         top: 2em;
-        right: 8.8em;
+        right: 3em;
     }
 
 }

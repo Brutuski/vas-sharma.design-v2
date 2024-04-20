@@ -61,26 +61,29 @@
     </div>
 </nav>
 
-<section class="brutalish-container home mt-5" id="hero">
+<section class="brutalish-container home mt-5 mb-5" id="hero">
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
             <h1>Hi! I'm Vas,</h1>
-            <p class="mt-5">I create design ecosystems for web and mobile applications</p>
-            <button class="brutalish-button-primary me-5" onclick="location.href='work.html'">See My Work</button>
+            <p class="mt-3">I create design ecosystems for web and mobile applications</p>
+            <button class="brutalish-button-primary mt-3 me-3" onclick="location.href='work.html'">See My Work</button>
             <button class="brutalish-button-secondary"
                     onclick="window.open('./resume/Vas-Sharma-Resume.pdf', '_blank')">
                 View Resume
             </button>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/profile_photo.jpg" alt="profile-photo">
+            <img src="images/profile-photo-homepage.png" alt="profile-photo">
         </div>
     </div>
 </section>
 
-<section class="home-ticker-section mt-5" id="worked-with">
+<section class="home-ticker-section" id="worked-with">
     <div class="brutalish-container">
-        <p class="home-ticker-section-heading">I have worked with</p>
+        <p class="home-section-heading mt-5">I have worked with</p>
+        <p class="temp-ticker-text">Xane AI | Zuellig Pharma | Derek O'Brien & Associates | Quest Alliance | Jhatkaa.org | Sumtracker |
+            Harper Collins Publishers | Empower Pragati | SnapPermit | RealList | DOQment AI</p>
+<!--
         <div class="ticker-container">
             <div class="ticker-text">
                 <span>Xane AI</span>
@@ -94,12 +97,15 @@
                 <span>SnapPermit</span>
             </div>
         </div>
+-->
         <div class="row mt-5">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="general-img" src="images/misc/home_design.gif" alt="creative-design-gif">
+                <video class="homepage-video" autoplay loop muted>
+                    <source src="images/misc/showreel.webm">
+                </video>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
-                <p class="home-ticker-section-heading">To build entire products from <span>start</span> to
+                <p class="home-section-heading">To build entire products from <span>start</span> to
                     <span>finish*</span></p>
                 <p class="home-ticker-section-tiny">*& some in the middle too</p>
             </div>
@@ -108,7 +114,7 @@
 </section>
 
 <section class="brutalish-container home-work-display mt-5" id="my-work">
-    <h2 class="text-center mb-5">My Work</h2>
+    <p class="home-section-heading text-center mb-5">My Work</p>
     <div class="row mb-5">
         <div class="col-md-6 col-sm-12">
             <img src="images/projects/covers/project_cover_clean_bangalore.png" alt="clean-bangalore-cover">
@@ -128,7 +134,7 @@
     <div class="col-12" id="divider">
         <hr class="divider">
     </div>
-    <div class="row mb-5 mt-5">
+    <div class="row work-layout-alt mb-5 mt-5">
         <div class="col-md-6 col-sm-12 order-md-2 order-sm-1">
             <img src="images/projects/covers/project_cover_zuellig_pharma.png" alt="clean-bangalore-cover">
         </div>
@@ -185,7 +191,10 @@ To be implemented in the near future
 
 <section class="brutalish-container lets-talk mt-5" id="contact-section">
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12 order-md-2 order-sm-1 mb-5">
+            <img style="width: 100%" src="images/backgrounds/contact_banner.svg" alt="contact-banner">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 order-md-1 order-sm-2">
             <h2>Let's talk and <span id="decorative-star">build your vision</span> together.</h2>
             <button class="brutalish-button-primary me-5"
                     onclick="location.href='mailto:vasundhara.14@gmail.com?subject=Reaching out via Portfolio Site'">
@@ -195,9 +204,6 @@ To be implemented in the near future
                     onclick="window.open('./resume/Vas-Sharma-Resume.pdf', '_blank')">
                 Schedule A Meeting
             </button>
-        </div>
-        <div class="col-6">
-            <img src="images/backgrounds/contact_banner.svg" alt="contact-banner">
         </div>
     </div>
 </section>

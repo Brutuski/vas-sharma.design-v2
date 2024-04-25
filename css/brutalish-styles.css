@@ -136,6 +136,25 @@ TODO Define 50% for large screen
     color: var(--brutalish-button-pressed);
 }
 
+.new-tab-link::after {
+    content: '';
+    display: inline-block;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-image: url("/images/icons/icon-new-tab.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.new-tab-link:hover::after {
+    opacity: 1;
+}
+
 /*
 ██████╗ █████╗ ██████╗ ██████╗ ███████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝

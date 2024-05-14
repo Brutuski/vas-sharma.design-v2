@@ -675,10 +675,15 @@ TODO Define 50% for large screen
     display: inline-block;
 }
 
-.project-process-statistics {
+.project-discover-statistics {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--project-process-discover-elements-statistics);
+}
+
+.project-discover-statistics-text {
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 
 .project-other {
@@ -798,12 +803,53 @@ Shown on every project page.
 .process-discover {
     background-color: var(--project-process-bg);
     border-radius: 1.5rem 1.5rem 0 0;
-    padding: 32px 38px 32px 38px;
+    padding: 2rem 1.75rem 2rem 1.75rem;
 }
 
 @media (max-width: 768px) {
     .process-discover {
-        padding: 1rem;
+        padding: 1rem 0.875rem 1rem 0.875rem;
+    }
+}
+
+.process-discover-statistics {
+    min-height: 4.1rem;
+    max-height: 4.1rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .process-discover-statistics {
+        min-height: 8rem;
+        max-height: 8rem;
+        margin: 0.02rem;
+        padding: 0.4rem;
+    }
+
+    .process-discover-statistics, #statistics-group-1, #statistics-group-3{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .process-discover-statistics {
+        min-height: 6rem;
+        max-height: 6rem;
+        margin: 0.02rem;
+        padding: 0.2rem;
+    }
+
+    .process-discover-statistics, #statistics-group-1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .process-discover-statistics, #statistics-group-3 {
+        margin-bottom: 0;
     }
 }
 
